@@ -1,0 +1,7 @@
+
+php_flag display_errors on
+# Use HTTP Strict Transport Security to force client to use secure connections only Header 
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+Header set X-Content-Type-Options "nosniff"
+#Header set Content-Type "text/javascript"; charset=utf-8
+#Header set Cache-Control max-age=31536000, immutable

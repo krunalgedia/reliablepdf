@@ -1,0 +1,393 @@
+.menu_bar{
+	grid-template-rows: 50px 5px 265px 10px 150px 0px 50px 50px 180px 30px 150px 50px 300px 50px 100px 75px;
+}
+
+.file_conv_opr_form{
+	display:none;
+}
+#compresspdf{
+	display:grid;
+	grid-row:5/7;
+	grid-column:2/5;
+}
+
+#splitpdf{
+	display:none;
+}
+
+@media screen and (max-width: 1200px) {
+	.menu_bar{
+		grid-template-rows: 50px 15px 265px 10px 150px 50px 50px 180px 50px 180px 50px 300px 50px 100px 75px;                                                               
+		grid-template-columns: 83px 141px 50px 225px repeat(4, 1fr);
+		grid-auto-rows: 30px;
+	}
+
+	.upload_form{
+		grid-column: 2/7;
+	}
+
+	#dropFileForm{
+		grid-column:1/5;
+	}
+	/*
+	#file_conv_opr_button {
+		display:grid;
+		grid-row: 1/3;
+		grid-column: 2/5;
+	    grid-template-columns: repeat(2,82%);
+		grid-template-rows:repeat(5,100px);
+	}
+	*/
+
+	#compresspdf{
+	display:grid;
+	grid-row:1/3;
+	grid-column:1/5;
+}
+	#points_header{
+		grid-row: 7/8;	
+	}
+
+	#comparision{
+		grid-row: 8/9;
+		grid-template-columns:repeat(3,1fr);
+	}
+
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display:grid;
+	}
+
+	#points, #our_points, #others_points{
+		margin:10px;
+	}
+
+	#whoweare{
+		grid-row: 9/10;
+		grid-column: 2/8;
+	}
+
+	#ourdescription{
+		grid-row: 10/11;
+		grid-column: 2/8;
+	}
+
+
+	#contact_us{
+		grid-row:11/12;
+		grid-column: 3/6;
+	}
+
+	.myForm {
+		grid-row:12/13;
+		grid-column:2/7;
+	}
+
+	#alllinks{
+		grid-row:14/15;
+	}
+
+	#footer{
+		grid-row:15/16;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.menu_bar{
+		width: 100%;
+		margin: 0px auto;
+		display: grid;
+		grid-template-rows: 50px 15px 265px 10px 100px 30px 50px 300px 30px 180px 30px 300px 50px 100px 75px;
+																
+		grid-template-columns: 83px 141px 50px 225px repeat(4, 1fr);
+		/*grid-gap: 20px;*/
+		grid-auto-rows: 30px;
+	}
+
+	.upload_form{
+		grid-column: 2/5;
+	}
+
+	#dropFileForm{
+		grid-column:1/5;
+	}
+	/*
+	#file_conv_opr_button {
+		grid-row: 5/6;
+		grid-column: 2/5;
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows:repeat(10,100px);
+		display:none;
+	}
+	*/
+	#compresspdf{
+		display:grid;
+		grid-row:1/1;
+		grid-column:1/5;
+}
+
+	#points_header{
+		grid-row: 7/8;	
+	}
+
+	#comparision{
+		grid-row: 8/9;
+		grid-template-columns:repeat(3,1fr);
+	}
+
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display:grid;
+	}
+
+	.points, .our_points, .others_points{
+		margin:10px;
+	}
+
+
+	#whoweare{
+		grid-row: 9/10;
+		grid-column: 3/6;
+	}
+
+	#ourdescription{
+		grid-row: 10/11;
+		grid-column: 2/8;
+	}
+
+
+	#contact_us{
+		grid-row:11/12;
+		grid-column: 3/6;
+	}
+
+	.myForm {
+		grid-row:12/13;
+		grid-column:2/7;
+	  }
+
+	#alllinks{
+		grid-row:14/15;
+	}
+
+	#footer{
+		grid-row:15/16;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	.menu_bar{
+	width: 100%;
+	margin: 0px auto;
+	display: grid;
+	grid-template-rows: 50px 15px 265px 10px 100px 30px 50px 350px 50px 270px 50px 300px 50px 75px;
+	grid-template-columns: 40px 95px 0px 164px repeat(4, 1fr);
+	/*grid-gap: 20px;*/
+	grid-auto-rows: 30px;
+	}
+
+	#points_header{
+	grid-template-columns: repeat(2,1fr);
+	}
+
+	.companyfirstname{
+	color:#82A620;
+	font-weight: bold;
+	font-size: 100%;
+	}
+	.companysecondname{
+		color:#A6209E;
+		font-weight: bold;
+		font-size: 100%;
+	}
+
+	.upload_form{
+	grid-column: 2/7;
+	}
+
+	#dropFileForm{
+		grid-column:1/5;
+	}
+
+	#file_conv_opr_button {
+		grid-row: 5/6;
+		grid-column: 2/6;
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows:repeat(10,100px);
+	}
+
+	#points_header{
+		grid-row: 7/8;	
+	}
+
+	#comparision{
+		grid-row: 8/9;
+		grid-template-columns:repeat(2,1fr);
+	}
+
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display:grid;
+	}
+
+	.points, .our_points, .others_points{
+		margin:10px;
+		padding:10px;
+	}
+	#others_points_header{
+		display:none;
+
+	}
+	.others_points{
+		display:none;
+	}
+
+	#whoweare{
+		grid-row: 9/10;
+		grid-column: 2/6;
+	}
+
+	#ourdescription{
+		grid-row: 10/11;
+		grid-column: 1/8;
+		padding:10px;
+	}
+
+
+	#contact_us{
+		grid-row:11/12;
+		grid-column: 2/6;
+	}
+
+	.myForm {
+		grid-row:12/13;
+		grid-column:1/7;
+		left:10px;
+	}
+
+
+	#alllinks{
+		grid-row:14/15;
+		font-size:small;
+	}
+
+	#footer{
+		grid-row:15/16;
+		font-size:small;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/*
+@media screen and (max-width: 600px) {
+   .menu_bar a:not(:first-child,:nth-child(2)){
+		display:none;
+   }
+   .menu_bar div.icon{
+		  float: top-right;
+		  display: block;
+		  position: relative;
+		  right:50px;
+		  
+   }
+}
+*/
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/*
+@media screen and (max-width: 600px) {
+  .menu_bar.responsive {position: relative;}
+  .menu_bar.responsive div.icon {
+    position: relative;
+    right: 50px;
+  }
+  .menu_bar.responsive{
+		grid-row-gap:1px;
+  }
+  .menu_bar.responsive 
+  #services {
+    grid-row: 2/3;
+	grid-column: 1/3;
+  }
+  #pricing {
+    grid-row: 3/4;
+	grid-column: 1/3;
+  }
+}
+
+.menu_bar_mobile{
+	display:grid;
+	grid-auto-rows: 30px;
+	grid-column: repeat(1,1fr)
+}
+
+
+.menu-bar{
+	background: rgba(0,100,0);
+	text-align: center;
+}
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+}
+.menu-bar ul li{
+	margin: 15px;
+	padding: 15px;
+	width: 100%;
+}
+.menu-bar ul li a 
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active:hover, .menu-bar ul li:hover {
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.menu-bar .fa {
+	margin-right: 8px;
+}
+.sub-menu1{
+	display: none;
+}
+.active:hover .sub-menu1{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 45px;
+	margin-bottom: -15px;
+	text-align: center;
+}
+.active:hover .sub-menu1 ul{
+	display: block;	
+}
+
+.active:hover .sub-menu1:hover ul{
+	display: block;	
+}
+
+*/
